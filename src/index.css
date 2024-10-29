@@ -50,6 +50,7 @@ h3,
 .plan-card {
   position: relative;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .inactive {
@@ -130,7 +131,7 @@ h3,
 .workout-container {
   display: flex;
   flex-direction: column;
-  grid-column: span 5 / span 5;
+  grid-column: span 3 / span 3;
   gap: 1rem;
 }
 
@@ -277,7 +278,8 @@ button.help-icon:hover {
     gap: 1rem;
   }
 
-  .workout-card {
+  .workout-card,
+  .workout-container {
     grid-column: span 4 / span 4;
   }
 
@@ -295,7 +297,8 @@ button.help-icon:hover {
     gap: 1rem;
   }
 
-  .workout-card {
+  .workout-card,
+  .workout-container {
     grid-column: span 5 / span 5;
   }
 
